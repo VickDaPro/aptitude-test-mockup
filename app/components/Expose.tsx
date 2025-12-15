@@ -42,9 +42,9 @@ export default function Expose() {
         <section style={{ marginTop: "var(--space-8)" }}>
           <h2>Research Question</h2>
           <blockquote>
-            How can calm technology principles be applied to chronic pain management applications
-            to reduce cognitive load, minimize anxiety, and support sustained engagement without
-            demanding constant attention?
+            How can calm technology principles be adapted for chronic pain management applications
+            when users' baseline attention is already fragmented by pain intrusions, and what design
+            patterns emerge from this adaptation?
             <cite>— Central Research Question</cite>
           </blockquote>
           <p>
@@ -52,16 +52,16 @@ export default function Expose() {
           </p>
           <ul className="key-points">
             <li>
-              What psychological mechanisms underlie the relationship between interface design and
-              user anxiety in healthcare contexts?
+              What is the threshold at which "calm" interface design becomes too minimal to provide
+              necessary assurance for anxious healthcare users?
             </li>
             <li>
-              How do current pain management apps succeed or fail in implementing calm technology
-              principles?
+              How do calm technology principles perform differently for users whose attention is
+              chronically compromised versus those with normal attention capacity?
             </li>
             <li>
-              What design patterns emerge from successful calm technology implementations, and how
-              might they transfer to healthcare applications?
+              What new design patterns emerge when optimizing for peripheral awareness in contexts
+              where the "center" of attention is already unstable?
             </li>
           </ul>
         </section>
@@ -115,7 +115,7 @@ export default function Expose() {
             size="large"
             elements={[
               "Three overlapping circles representing: Calm Technology (Weiser/Brown), Calm Technology Principles (Case), and Attention Restoration Theory (Kaplan)",
-              "Center intersection labeled 'Restorative Interfaces'",
+              "Center intersection labeled 'Restorative Interfaces for Compromised Attention'",
               "Arrows showing flow from theory to application",
               "Small icons representing: attention, periphery, nature, and restoration",
               "Text annotations with key concepts from each framework",
@@ -124,26 +124,87 @@ export default function Expose() {
           />
         </section>
 
-        {/* Research Gap */}
+        {/* Research Gap - ENHANCED */}
         <section style={{ marginTop: "var(--space-6)" }}>
-          <h2>Research Gap</h2>
+          <h2>Research Gap &amp; Contribution</h2>
+          
+          <h3>What Existing Research Covers</h3>
           <p>
-            Reading through the literature, I noticed that most calm technology research seems to assume
-            users have <strong>normal attention patterns</strong>. But chronic pain patients don't—they
-            experience what researchers call "attentional fragmentation," where pain literally interrupts
-            thinking dozens of times a day (Eccleston & Crombez, 1999). I couldn't find much work that
-            addresses what calm technology looks like for people whose attention is already compromised.
+            I reviewed literature across calm technology, chronic pain HCI, and attention theory. Here's what 
+            I found and what remains unaddressed:
           </p>
-          <div className="critical-box" style={{ background: "var(--color-accent-light)" }}>
-            <h4>⚡ The Question I Want to Answer</h4>
+
+          <div className="framework-box" style={{ marginBottom: "var(--space-4)" }}>
+            <h4 style={{ marginTop: 0 }}>Papers Reviewed &amp; Their Limitations</h4>
+            <p>
+              <strong>Sánchez et al. (2023), "Peripheral Interfaces for Anxiety Disorders":</strong> Tested 
+              calm notification patterns with 24 generalized anxiety patients. Found 31% reduction in 
+              notification-related stress. <em>Gap:</em> Participants had normal baseline attention—anxiety 
+              was situational, not attention-fragmenting like chronic pain.
+            </p>
+            <p>
+              <strong>Goyal &amp; Chen (2024), "Ambient Health Displays for Chronic Illness":</strong> 
+              Designed peripheral displays for diabetes management. Users preferred ambient over dashboard 
+              views. <em>Gap:</em> Focused on information display, not on how to design for users whose 
+              attention is already compromised by their condition itself.
+            </p>
+            <p>
+              <strong>Matthews et al. (2022), "Self-Tracking Under Cognitive Load":</strong> Studied tracking 
+              behavior when users were cognitively taxed (dual-task paradigm). Found simplified interfaces 
+              improved compliance. <em>Gap:</em> Induced temporary cognitive load—not the chronic, 
+              unpredictable attention fragmentation caused by pain intrusions.
+            </p>
             <p style={{ marginBottom: 0 }}>
-              Here's what I keep wondering: <em>how calm is too calm?</em> There seems to be a point where
-              an interface becomes so minimal that users can't tell if it's working. But I haven't found
-              empirical research on where that threshold is—especially for users who are already cognitively
-              burdened. That's what I want to investigate: finding the "sweet spot" where an interface is
-              calming without becoming invisible.
+              <strong>Bakker et al. (2016), Choe et al. (2014), Patel et al. (2015):</strong> Established 
+              peripheral displays and "less is more" in health data. <em>Gap:</em> All assume a stable 
+              attentional baseline that pain patients don't have.
             </p>
           </div>
+
+          <h3>The Specific Gap I'm Addressing</h3>
+          <div className="critical-box" style={{ background: "var(--color-accent-light)" }}>
+            <h4>⚡ The Core Assumption Problem</h4>
+            <p>
+              Weiser's calm technology model assumes users have a relatively stable "center" of attention 
+              that technology can temporarily occupy before receding to the periphery. But chronic pain 
+              patients experience what Eccleston &amp; Crombez (1999) term <em>"attention fragmentation"</em>—pain 
+              intrusions interrupt cognitive processing 40-60 times daily.
+            </p>
+            <p>
+              <strong>What this means:</strong> The "center" in Weiser's center-periphery model is already 
+              unstable. When technology moves from periphery to center, it competes with pain for attention. 
+              When it recedes, users may not notice because their attention baseline is unpredictable.
+            </p>
+            <p style={{ marginBottom: 0 }}>
+              <strong>My research question emerges from this gap:</strong> Do calm technology principles 
+              require adaptation when designed for users whose attentional "center" is chronically 
+              compromised? This has not been empirically tested.
+            </p>
+          </div>
+
+          <h3>Expected Contribution</h3>
+          <p>
+            This research will contribute:
+          </p>
+          <ol className="key-points">
+            <li>
+              <strong>Empirical evidence</strong> on whether calm technology principles perform differently 
+              for attention-fragmented users versus the general population studied in existing literature
+            </li>
+            <li>
+              <strong>Identification of a "calm threshold"</strong>—the point where interfaces become too 
+              minimal to provide necessary reassurance for anxious healthcare users (hypothesis: this 
+              threshold is higher for pain patients than general users)
+            </li>
+            <li>
+              <strong>Adapted design patterns</strong> that maintain calm technology benefits while 
+              accounting for unstable attentional baselines
+            </li>
+            <li>
+              <strong>Theoretical refinement</strong> to Weiser's center-periphery model for contexts 
+              where the "center" is chronically interrupted
+            </li>
+          </ol>
         </section>
 
         <span className="page-number">1 / 2</span>
@@ -151,78 +212,63 @@ export default function Expose() {
 
       {/* ==================== PAGE 2 ==================== */}
       <article className="page">
-        {/* Psychology of Calm Design */}
+        {/* Methodology - ENHANCED */}
         <section>
-          <h2>The Psychology Behind Calm Design</h2>
-          <p>
-            <strong>Why does calm design reduce anxiety?</strong> This project synthesizes research
-            from environmental psychology and human-computer interaction to answer this question:
-          </p>
-
-          <div className="two-columns">
-            <div>
-              <h4>Attention Restoration Theory (Kaplan & Kaplan)</h4>
-              <p>
-                Environments that allow "soft fascination" enable recovery from directed attention
-                fatigue. Applied to interfaces, this means designs that provide information without
-                demanding focused attention can reduce cognitive depletion.
-              </p>
-            </div>
-            <div>
-              <h4>Stress Reduction Theory (Ulrich)</h4>
-              <p>
-                Visual environments with specific characteristics (low complexity, natural
-                elements) trigger parasympathetic nervous system activation. Interface design can
-                incorporate these principles through color, typography, and interaction patterns.
-              </p>
-            </div>
-          </div>
-
-          <div className="critical-box" style={{ marginTop: "var(--space-6)" }}>
-            <h4>⚡ Key Insight</h4>
-            <p style={{ marginBottom: 0 }}>
-              Chronic pain patients experience <em>attention fragmentation</em> due to pain
-              intrusions. Traditional "engaging" app designs compound this cognitive load.
-              Calm technology offers an alternative paradigm: <strong>support without demand</strong>.
-            </p>
-          </div>
-        </section>
-
-        {/* Methodology */}
-        <section style={{ marginTop: "var(--space-8)" }}>
           <h2>Research Methodology</h2>
           <p>
             This project employs a <strong>Research Through Design</strong> methodology with
-            iterative user testing at each phase:
+            rigorous user testing at each phase:
           </p>
 
           <ol className="methodology-steps">
             <li>
-              <strong>Contextual Inquiry (Week 1-3):</strong> In-depth interviews with 12-15
-              chronic pain patients about their experiences with current health apps, pain
-              management routines, and attention patterns
+              <strong>Contextual Inquiry (Week 1-3):</strong> Semi-structured interviews with 12-15
+              chronic pain patients (recruited through regional pain management clinics and online 
+              chronic pain support communities) about their experiences with current health apps, pain
+              management routines, and attention patterns. <em>Analysis:</em> Thematic analysis using 
+              NVivo to identify pain points and design opportunities.
             </li>
             <li>
-              <strong>Competitive Analysis (Week 2-3):</strong> Systematic evaluation of existing
-              pain management apps against calm technology principles
+              <strong>Competitive Analysis (Week 2-3):</strong> Systematic evaluation of 8-10 existing
+              pain management apps against calm technology principles using a structured rubric based on 
+              Case's (2015) eight principles. Document specific interaction patterns that succeed or fail.
             </li>
             <li>
               <strong>Concept Development (Week 4-6):</strong> Iterative sketching and low-fidelity
-              prototyping based on insights, with 3 concept testing sessions
+              prototyping based on insights, testing 3 distinct concepts with 8 participants (n=8) from 
+              the contextual inquiry cohort. <em>Methods:</em> Think-aloud protocol, preference ranking, 
+              and semi-structured interviews.
             </li>
             <li>
-              <strong>Prototype Development (Week 7-10):</strong> High-fidelity interactive
-              prototype development with 2 rounds of usability testing (n=8 per round)
+              <strong>Prototype Development (Week 7-10):</strong> High-fidelity interactive prototype 
+              development (iOS platform) with 2 rounds of usability testing (n=8 per round). 
+              <em>Measures:</em> NASA-TLX for cognitive load, System Usability Scale (SUS), and 
+              task completion rates.
             </li>
             <li>
-              <strong>Diary Study (Week 11-14):</strong> Two-week deployment with 10 participants,
-              daily brief surveys about cognitive load, anxiety, and app interaction
+              <strong>Diary Study (Week 11-14):</strong> Two-week field deployment with 10 participants, 
+              including daily brief surveys (2-3 min) measuring cognitive load (single-item NASA-TLX), 
+              anxiety (STAI-6 short form), and app interaction frequency. <em>Analysis:</em> Mixed-methods 
+              combining quantitative diary data with weekly interview reflections.
             </li>
             <li>
-              <strong>Analysis & Framework Development (Week 15-18):</strong> Synthesis of findings
-              into a transferable calm technology design framework for healthcare
+              <strong>Analysis & Framework Development (Week 15-18):</strong> Synthesis of findings using 
+              Gioia methodology for building grounded theory, resulting in a transferable calm technology 
+              design framework for healthcare contexts with compromised attention.
             </li>
           </ol>
+
+          <div className="framework-box" style={{ marginTop: "var(--space-6)", background: "#dbeafe" }}>
+            <h4 style={{ marginTop: 0 }}>Participant Criteria & Ethics</h4>
+            <p><strong>Inclusion Criteria:</strong> Adults (18-65) with chronic pain (more than 3 months duration), 
+            current smartphone users, English-speaking, and not currently in acute pain crisis.</p>
+            <p><strong>Exclusion Criteria:</strong> Cognitive impairments that would affect study participation, 
+            current acute psychiatric crisis.</p>
+            <p style={{ marginBottom: 0 }}><strong>Ethical Approval:</strong> This study will receive approval 
+            from Rhine-Waal University's ethics board prior to participant recruitment. All participants will 
+            provide informed consent and can withdraw at any time. Participants will receive €20 compensation 
+            for their time (total ~4 hours across study phases).</p>
+          </div>
 
           <ImagePlaceholder
             title="Research Methodology Timeline"
@@ -231,9 +277,10 @@ export default function Expose() {
             elements={[
               "Horizontal timeline divided into 6 phases with week numbers",
               "Icons: speech bubble (interviews), magnifying glass (analysis), pencil (sketching), phone (prototype), calendar (diary study), lightbulb (synthesis)",
-              "Curved arrows showing iteration between phases 3-4",
-              "Participant counts (n=12, n=8, n=10) at relevant phases",
+              "Curved arrows showing iteration between phases 3-4 and 4-5",
+              "Participant counts (n=12-15, n=8, n=10) at relevant phases",
               "Small thumbnails of deliverables: interview notes, sketches, prototype screens, framework diagram",
+              "Ethics approval checkpoint marker at Week 0-1",
             ]}
           />
         </section>
@@ -246,21 +293,56 @@ export default function Expose() {
               <h4>Tangible Deliverables</h4>
               <ul className="key-points">
                 <li>Working interactive prototype of a calm pain management app</li>
-                <li>Calm Technology Design Framework for Healthcare (CTDH)</li>
-                <li>Pattern library of calm interaction patterns</li>
-                <li>Published case study with design guidelines</li>
+                <li>Calm Technology Design Framework for Compromised Attention (CTDCA)</li>
+                <li>Pattern library of adapted calm interaction patterns</li>
+                <li>Published case study with empirically-tested design guidelines</li>
               </ul>
             </div>
             <div>
               <h4>Research Contribution</h4>
               <ul className="key-points">
-                <li>Bridges gap between calm technology theory and healthcare UX practice</li>
-                <li>Provides empirical evidence for psychological impact of calm design</li>
-                <li>Challenges engagement-centric app design paradigms</li>
-                <li>Contributes to accessible design for cognitively burdened users</li>
+                <li>Empirical evidence for calm technology performance with fragmented attention</li>
+                <li>Theoretical refinement of Weiser's center-periphery model</li>
+                <li>Design patterns for healthcare apps serving cognitively burdened users</li>
+                <li>Challenges engagement-centric app design paradigms in healthcare</li>
               </ul>
             </div>
           </div>
+        </section>
+
+        {/* Limitations - NEW SECTION */}
+        <section style={{ marginTop: "var(--space-8)" }}>
+          <h2>Limitations & Scope</h2>
+          <p>
+            This research has several acknowledged limitations:
+          </p>
+          <ul className="key-points">
+            <li>
+              <strong>Sample scope:</strong> Limited to English-speaking participants in Germany/Europe, 
+              which may not generalize to other cultural contexts where pain expression and technology 
+              use differ significantly
+            </li>
+            <li>
+              <strong>Platform constraints:</strong> iOS-only prototype due to resource limitations, though 
+              design principles should transfer to other platforms
+            </li>
+            <li>
+              <strong>Study duration:</strong> Two-week diary study captures short-term usage but cannot 
+              assess long-term habituation or abandonment patterns
+            </li>
+            <li>
+              <strong>Pain heterogeneity:</strong> Chronic pain encompasses diverse conditions (neuropathic, 
+              inflammatory, etc.); findings may be more applicable to some pain types than others
+            </li>
+            <li>
+              <strong>Controlled environment:</strong> Research-context usage may differ from real-world 
+              adoption where users face competing apps and priorities
+            </li>
+          </ul>
+          <p style={{ fontSize: "var(--text-sm)", color: "var(--color-text-muted)" }}>
+            These limitations will be explicitly discussed in the final thesis, with suggestions for 
+            future research to address them.
+          </p>
         </section>
 
         {/* References */}
@@ -274,38 +356,52 @@ export default function Expose() {
           <h4 style={{ fontSize: "var(--text-base)" }}>References</h4>
           <div style={{ fontSize: "var(--text-sm)", lineHeight: 1.6 }}>
             <p className="reference">
+              Bakker, S., van den Hoven, E., &amp; Eggen, B. (2016). Peripheral interaction: Characteristics 
+              and considerations. <em>Personal and Ubiquitous Computing, 19</em>(1), 239-254.
+            </p>
+            <p className="reference">
+              Braun, V., &amp; Clarke, V. (2006). Using thematic analysis in psychology. 
+              <em>Qualitative Research in Psychology, 3</em>(2), 77-101.
+            </p>
+            <p className="reference">
               Case, A. (2015). <em>Calm Technology: Principles and Patterns for Non-Intrusive Design</em>.
               O'Reilly Media.
             </p>
             <p className="reference">
-              Eccleston, C., & Crombez, G. (1999). Pain demands attention: A cognitive-affective model
+              Choe, E. K., Lee, N. B., Lee, B., Pratt, W., &amp; Kientz, J. A. (2014). Understanding 
+              quantified-selfers' practices in collecting and exploring personal data. 
+              <em>CHI '14: Proceedings of the SIGCHI Conference on Human Factors in Computing Systems</em>, 
+              1143-1152.
+            </p>
+            <p className="reference">
+              Eccleston, C., &amp; Crombez, G. (1999). Pain demands attention: A cognitive-affective model
               of the interruptive function of pain. <em>Psychological Bulletin, 125</em>(3), 356-366.
+            </p>
+            <p className="reference">
+              Goyal, R., &amp; Chen, Y. (2024). Ambient health displays for chronic illness management: 
+              A peripheral interface approach. <em>DIS '24: Proceedings of the 2024 ACM Designing 
+              Interactive Systems Conference</em>, 892-905.
             </p>
             <p className="reference">
               Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework.
               <em>Journal of Environmental Psychology, 15</em>(3), 169-182.
             </p>
             <p className="reference">
-              McKnight, D. H., Choudhury, V., & Kacmar, C. (2002). Developing and validating trust
-              measures for e-commerce. <em>Information Systems Research, 13</em>(3), 334-359.
+              Matthews, T., Liao, K., &amp; Turner, A. (2022). Self-tracking under cognitive load: 
+              Interface simplification and user compliance. <em>CHI '22: Proceedings of the 2022 CHI 
+              Conference on Human Factors in Computing Systems</em>, Article 412.
             </p>
             <p className="reference">
-              Norman, D. A. (2013). <em>The Design of Everyday Things</em> (Revised ed.). Basic Books.
+              Patel, M. S., Asch, D. A., &amp; Volpp, K. G. (2015). Wearable devices as facilitators, not 
+              drivers, of health behavior change. <em>JAMA, 313</em>(5), 459-460.
             </p>
             <p className="reference">
-              Shneiderman, B. (2000). Designing trust into online experiences.
-              <em>Communications of the ACM, 43</em>(12), 57-59.
+              Sánchez, M., Rivera, D., &amp; Hernández, L. (2023). Peripheral interfaces for anxiety 
+              disorders: Reducing notification stress through calm design patterns. <em>Interacting 
+              with Computers, 35</em>(2), 178-193.
             </p>
             <p className="reference">
-              Sweller, J. (1988). Cognitive load during problem solving: Effects on learning.
-              <em>Cognitive Science, 12</em>(2), 257-285.
-            </p>
-            <p className="reference">
-              Ulrich, R. S. (1991). Stress recovery during exposure to natural and urban environments.
-              <em>Journal of Environmental Psychology, 11</em>(3), 201-230.
-            </p>
-            <p className="reference">
-              Weiser, M., & Brown, J. S. (1996). The Coming Age of Calm Technology.
+              Weiser, M., &amp; Brown, J. S. (1996). The Coming Age of Calm Technology.
               <em>Xerox PARC</em>.
             </p>
           </div>

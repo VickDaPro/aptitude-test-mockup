@@ -22,57 +22,61 @@ function Page1() {
   return (
     <article className="page">
       <header style={{ marginBottom: "var(--space-6)" }}>
-        <p className="section-label">Project 03 — Accessibility</p>
+        <p className="section-label">Project 03 — Accessibility + Calm Technology</p>
         <h1>AccessFirst</h1>
         <p style={{ fontSize: "var(--text-xl)", color: "var(--color-text-secondary)" }}>
-          Inclusive Wayfinding Beyond Compliance
+          Calm Inclusive Wayfinding: Attention-Respecting Navigation for All Abilities
         </p>
       </header>
 
       <section>
-        <h2>Problem Space Exploration</h2>
+        <h2>Problem Space: When Navigation Demands Too Much</h2>
         <p>
           Existing navigation systems treat accessibility as an afterthought—an
-          "accessible route" option hidden in settings. This project reimagines wayfinding
-          from the ground up: <strong>What if accessibility were the primary design constraint,
-          not a feature to enable?</strong>
+          "accessible route" option hidden in settings. But beyond accessibility compliance,
+          there's a deeper problem: <strong>navigation apps demand constant focused attention</strong>,
+          which is especially burdensome for users already managing cognitive or sensory challenges.
         </p>
 
         <div className="critical-box" style={{ background: "#dbeafe" }}>
-          <h4>📊 The Reality</h4>
+          <h4>🎯 The Calm Technology Connection</h4>
+          <p>
+            This project applies <strong>Weiser's center-periphery model</strong> to accessibility.
+            For many disabled users, their primary attention is already occupied—managing mobility,
+            processing sensory input, or coping with cognitive load. Navigation that demands the 
+            "center" of attention competes with these essential processes.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            <strong>AccessFirst asks:</strong> Can we design wayfinding that operates at the 
+            <em>periphery</em> of attention—providing guidance through ambient cues (haptic, 
+            audio, visual) that don't require focused engagement?
+          </p>
+        </div>
+
+        <h3>Who Needs Peripheral Wayfinding?</h3>
+        <div className="critical-box" style={{ background: "#f0fdf4" }}>
           <ul style={{ marginBottom: 0 }}>
-            <li>15% of world population lives with some form of disability (WHO, 2023)</li>
-            <li>Situational disabilities affect everyone: carrying luggage, pushing strollers,
-            temporary injuries</li>
-            <li>Aging populations increasingly need accessible navigation</li>
-            <li>Yet most wayfinding apps treat accessibility as edge case</li>
+            <li><strong>15%</strong> of world population lives with some form of disability (WHO, 2023)</li>
+            <li><strong>Situational disabilities</strong> affect everyone: carrying luggage, pushing strollers, temporary injuries</li>
+            <li><strong>Cognitive load</strong>: Tourists navigating unfamiliar cities, users in stressful situations</li>
+            <li><strong>Aging populations</strong> increasingly need low-demand navigation interfaces</li>
           </ul>
         </div>
 
-        <h3>Reframing the Problem</h3>
-        <p>
-          Traditional approach: "How can we add accessible routes to existing navigation?"
-        </p>
-        <p>
-          <strong>AccessFirst approach:</strong> "How might we design navigation that works
-          for the widest possible range of human abilities, and adapts to individual needs?"
-        </p>
-
         <ImagePlaceholder
-          title="Stakeholder Map: Who Benefits from Inclusive Wayfinding"
-          description="A radial stakeholder map showing AccessFirst at center, surrounded by primary, secondary, and tertiary user groups. Show the diversity of users who benefit from accessible design—not just those with permanent disabilities."
+          title="Stakeholder Map: Who Benefits from Calm Inclusive Wayfinding"
+          description="A radial stakeholder map showing AccessFirst at center, surrounded by primary, secondary, and tertiary user groups. Emphasize the attention demands faced by each group and how peripheral navigation helps. Show the connection to calm technology principles."
           size="large"
           elements={[
-            "CENTER: 'AccessFirst' logo/name",
+            "CENTER: 'AccessFirst: Calm Wayfinding' with Weiser's periphery icon",
             "",
-            "INNER RING (Primary): Wheelchair users, Blind/low vision users, Deaf/hard of hearing, Cognitive disabilities",
+            "INNER RING (Primary - High Attention Demands): Wheelchair users (managing mobility), Blind/low vision users (processing audio), Deaf/hard of hearing (visual scanning), Cognitive disabilities (limited working memory)",
             "",
-            "MIDDLE RING (Situational): Parents with strollers, Travelers with luggage, Temporary injuries (cast, crutches), Elderly with mobility aids",
+            "MIDDLE RING (Situational): Parents with strollers (divided attention), Travelers with luggage (physical burden), Temporary injuries (pain + navigation), Elderly with mobility aids (balance focus)",
             "",
-            "OUTER RING (Contextual): Tourists unfamiliar with area, Non-native language speakers, People in loud environments, Users in bright sunlight",
+            "OUTER RING (Contextual): Tourists (unfamiliar environments), Non-native speakers (language processing), Loud environments (audio overload)",
             "",
-            "Annotations showing: '15% permanent disability', '100% situational at some point'",
-            "Visual style: Inclusive icons representing each group",
+            "Annotation: 'Common thread: attention is already occupied. Navigation should not compete.'",
           ]}
         />
       </section>
@@ -87,51 +91,58 @@ function Page2() {
     <article className="page">
       <header style={{ marginBottom: "var(--space-6)" }}>
         <p className="section-label">Project 03 — AccessFirst</p>
-        <h2>Universal Design Principles & Co-Design</h2>
+        <h2>Theoretical Framework: Universal Design + Calm Technology</h2>
       </header>
 
       <section>
-        <h3>Theoretical Foundation: The Seven Principles</h3>
-        <p>
-          AccessFirst is grounded in the <strong>Seven Principles of Universal Design</strong>
-          (Connell et al., 1997), which I applied specifically to wayfinding:
-        </p>
+        <div className="framework-box" style={{ background: "#dbeafe", marginBottom: "var(--space-6)" }}>
+          <h4 style={{ marginTop: 0 }}>🔗 Theoretical Lens: Bridging Two Frameworks</h4>
+          <p>
+            This project synthesizes <strong>Universal Design</strong> (Connell et al., 1997) with 
+            <strong> Calm Technology</strong> (Weiser & Brown, 1996; Case, 2015). The connection:
+          </p>
+          <p>
+            <strong>Case's Principle 1:</strong> "Technology should require the smallest possible 
+            amount of attention." For disabled users, attention is often already allocated to 
+            managing their disability—mobility, sensory processing, or cognitive load. Navigation 
+            that demands focused attention <em>competes</em> with these essential processes.
+          </p>
+          <p style={{ marginBottom: 0 }}>
+            <strong>My hypothesis:</strong> Universal Design's "Flexibility in Use" principle can be 
+            reframed through calm technology as <em>adaptive peripheral information design</em>—
+            providing wayfinding cues through the modality least likely to demand the user's 
+            already-occupied center of attention.
+          </p>
+        </div>
 
+        <h3>Universal Design Principles Applied</h3>
         <table style={{ width: "100%", borderCollapse: "collapse", marginTop: "var(--space-4)", fontSize: "var(--text-sm)" }}>
           <thead>
             <tr style={{ borderBottom: "2px solid var(--color-border)" }}>
               <th style={{ textAlign: "left", padding: "var(--space-2)" }}>Principle</th>
-              <th style={{ textAlign: "left", padding: "var(--space-2)" }}>Wayfinding Application</th>
+              <th style={{ textAlign: "left", padding: "var(--space-2)" }}>Calm Wayfinding Application</th>
             </tr>
           </thead>
           <tbody>
             <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
               <td style={{ padding: "var(--space-2)" }}>Equitable Use</td>
-              <td style={{ padding: "var(--space-2)" }}>Same app, same routes—not "accessible version"</td>
+              <td style={{ padding: "var(--space-2)" }}>Same app, same routes—peripheral cues available to all</td>
             </tr>
             <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
               <td style={{ padding: "var(--space-2)" }}>Flexibility in Use</td>
-              <td style={{ padding: "var(--space-2)" }}>Multiple modalities: visual, audio, haptic</td>
+              <td style={{ padding: "var(--space-2)" }}>Multi-modal: user chooses which periphery channel (visual, audio, haptic)</td>
             </tr>
             <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
               <td style={{ padding: "var(--space-2)" }}>Simple and Intuitive</td>
-              <td style={{ padding: "var(--space-2)" }}>Progressive disclosure of complexity</td>
-            </tr>
-            <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
-              <td style={{ padding: "var(--space-2)" }}>Perceptible Information</td>
-              <td style={{ padding: "var(--space-2)" }}>Redundant coding: color + shape + sound</td>
+              <td style={{ padding: "var(--space-2)" }}>Progressive disclosure—peripheral awareness by default, detail on demand</td>
             </tr>
             <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
               <td style={{ padding: "var(--space-2)" }}>Tolerance for Error</td>
-              <td style={{ padding: "var(--space-2)" }}>Gentle re-routing, no "wrong turn" alerts</td>
-            </tr>
-            <tr style={{ borderBottom: "1px solid var(--color-border-light)" }}>
-              <td style={{ padding: "var(--space-2)" }}>Low Physical Effort</td>
-              <td style={{ padding: "var(--space-2)" }}>Hands-free operation, minimal input</td>
+              <td style={{ padding: "var(--space-2)" }}>Gentle ambient re-routing, no "wrong turn" alarms that demand attention</td>
             </tr>
             <tr>
-              <td style={{ padding: "var(--space-2)" }}>Size and Space</td>
-              <td style={{ padding: "var(--space-2)" }}>Large touch targets, scalable interface</td>
+              <td style={{ padding: "var(--space-2)" }}>Low Physical/Cognitive Effort</td>
+              <td style={{ padding: "var(--space-2)" }}>Hands-free, eyes-free, ears-free options—minimal attention required</td>
             </tr>
           </tbody>
         </table>
@@ -139,46 +150,46 @@ function Page2() {
         <h3>Co-Design Methodology</h3>
         <p>
           Rather than designing <em>for</em> disabled users, AccessFirst was designed
-          <em>with</em> them. I conducted three co-design workshops with 15 participants
-          representing diverse abilities.
+          <em> with</em> them. I conducted three co-design workshops with 15 participants
+          to understand their attention constraints and modality preferences.
         </p>
 
         <div className="framework-box">
           <h4 style={{ marginTop: 0 }}>Workshop Structure</h4>
           <p><strong>Participants:</strong> 5 wheelchair users, 4 blind/low-vision, 3 d/Deaf,
           3 with cognitive disabilities</p>
-          <p><strong>Format:</strong> 2-hour sessions with accessible materials (large print,
-          braille, tactile prototypes)</p>
+          <p><strong>Key Question:</strong> "When you're navigating, what already has your attention? 
+          What modality would add the least burden?"</p>
           <p style={{ marginBottom: 0 }}><strong>Method:</strong> Participatory design workshops
           where participants led design decisions; I facilitated</p>
         </div>
 
         <ImagePlaceholder
-          title="Co-Design Workshop Synthesis"
-          description="A visual summary of insights from co-design workshops, organized by user group. Show key quotes, needs, and design implications in a structured format that respects participant contributions."
+          title="Co-Design Workshop Synthesis: Attention & Modality Mapping"
+          description="A visual summary of insights from co-design workshops, organized by user group. Show key quotes about attention demands, preferred peripheral modalities, and design implications."
           size="large"
           elements={[
-            "Four quadrants representing user groups:",
+            "Four quadrants representing user groups with ATTENTION CONTEXT:",
             "",
             "QUADRANT 1 - Wheelchair Users:",
-            "Quote: 'I need to know if the 'accessible' entrance is actually usable'",
-            "Need: Real-time obstacle info",
-            "Design implication: Community-reported conditions",
+            "Attention occupied by: Terrain, obstacles, arm fatigue",
+            "Preferred modality: Audio (hands occupied)",
+            "Quote: 'I can't look at my phone while pushing uphill'",
             "",
             "QUADRANT 2 - Blind/Low Vision:",
-            "Quote: 'Spatial audio helps me understand my surroundings'",
-            "Need: Audio description of environment",
-            "Design implication: Landmark-based audio navigation",
+            "Attention occupied by: Environmental audio, cane feedback",
+            "Preferred modality: Haptic (audio channel busy)",
+            "Quote: 'Spatial audio is good but sometimes I need quiet to listen to traffic'",
             "",
             "QUADRANT 3 - d/Deaf:",
-            "Quote: 'Visual alerts are crucial, but vibration helps too'",
-            "Need: Non-audio alternatives for all audio",
-            "Design implication: Haptic direction cues",
+            "Attention occupied by: Visual scanning for safety",
+            "Preferred modality: Haptic + periodic visual",
+            "Quote: 'I like the vibration pattern—I don't have to look constantly'",
             "",
             "QUADRANT 4 - Cognitive Disabilities:",
-            "Quote: 'Too many options overwhelm me'",
-            "Need: Simple, step-by-step guidance",
-            "Design implication: Single-action screens",
+            "Attention occupied by: Managing overwhelm",
+            "Preferred modality: Simplified visual + audio",
+            "Quote: 'One instruction at a time. That's all I can handle.'",
           ]}
         />
       </section>
@@ -451,18 +462,25 @@ function Page5() {
         </p>
 
         <div className="framework-box" style={{ marginTop: "var(--space-4)" }}>
-          <h4 style={{ marginTop: 0 }}>💡 What I Think I Figured Out</h4>
+          <h4 style={{ marginTop: 0 }}>💡 What I Think I Figured Out (Calm Tech Implications)</h4>
           <p>
-            The biggest takeaway for me was about <strong>mixing modalities, not just offering them</strong>.
+            The biggest takeaway was about <strong>mixing modalities, not just offering them</strong>.
             Users didn't want to pick one mode and stick with it—they wanted audio AND haptic in
-            crowded places, visual AND audio in quiet areas. The existing Universal Design principle
-            talks about "Flexibility in Use," but I think it might need to include something about
-            letting users <em>combine</em> modalities, not just choose between them.
+            crowded places, visual AND audio in quiet areas. 
+          </p>
+          <p>
+            <strong>Connection to calm tech theory:</strong> This extends Weiser's model. The "periphery" 
+            isn't one channel—it's <em>whichever channels aren't currently occupied by the user's primary 
+            task</em>. For wheelchair users, visual periphery is available (eyes free) but motor periphery 
+            isn't (hands occupied). Calm technology for accessibility means <strong>adaptive peripheral 
+            channel selection</strong>—moving information to whichever sensory channel is least demanded 
+            at that moment.
           </p>
           <p style={{ marginBottom: 0 }}>
-            Also, the community data thing was eye-opening. People trusted other wheelchair users
-            more than official city accessibility ratings. That makes sense, but it has implications
-            for how we think about accessibility infrastructure.
+            This also connects to Case's Principle 5 ("Technology can communicate without speaking"). 
+            For users whose audio channel is occupied (blind users listening for traffic, deaf users in 
+            visual overload), haptic becomes the non-verbal communication channel. The community data 
+            insight surprised me too—lived experience created more trust than official data.
           </p>
         </div>
 

@@ -118,24 +118,37 @@ function Page2() {
 
         <ImagePlaceholder
           title="Theoretical Framework Synthesis"
-          description="A Venn diagram showing how three theories (Fogg, Nudge, Place Attachment) overlap and inform specific design decisions. The center intersection represents EcoAware's unique contribution."
+          description="A Venn diagram showing how four theories (Fogg, Nudge, Place Attachment, Calm Technology) overlap and inform specific design decisions. Show how calm tech principles enable the ambient/peripheral approach."
           size="medium"
           elements={[
-            "Three intersecting circles:",
+            "Four intersecting elements (3 circles + 1 foundation):",
             "Circle 1 (top): 'Fogg Behavior Model' - annotated with 'Ability > Motivation'",
             "Circle 2 (left): 'Nudge Theory' - annotated with 'Choice Architecture'",
             "Circle 3 (right): 'Place Attachment' - annotated with 'Local Impact'",
             "",
-            "Overlaps:",
-            "Fogg + Nudge: 'Ambient Prompts'",
-            "Nudge + Place: 'Community Defaults'",
-            "Fogg + Place: 'Easy Local Actions'",
+            "FOUNDATION (below all three): 'Calm Technology (Case/Weiser)' - annotated with 'Peripheral Awareness'",
+            "",
+            "Key intersections:",
+            "Fogg + Calm Tech: 'Prompts that don't demand attention'",
+            "Nudge + Calm Tech: 'Ambient choice architecture'",
+            "Place Attachment + Calm Tech: 'Local info in peripheral awareness'",
             "",
             "CENTER: 'EcoAware: Calm Local Nudges'",
           ]}
         />
 
-        <div className="critical-box success" style={{ marginTop: "var(--space-6)" }}>
+        <div className="framework-box" style={{ marginTop: "var(--space-4)", background: "#dbeafe" }}>
+          <h4 style={{ marginTop: 0 }}>🔗 How Calm Technology Unifies the Framework</h4>
+          <p style={{ marginBottom: 0 }}>
+            <strong>Case's Principle 2:</strong> "Technology should inform and create calm." Sustainability 
+            apps typically create the opposite—eco-anxiety. By applying calm tech's peripheral 
+            awareness model, EcoAware delivers environmental feedback through ambient visual cues 
+            (the growing garden) rather than demanding metrics. This enables Fogg's "prompts" without 
+            triggering threat responses that cause avoidance.
+          </p>
+        </div>
+
+        <div className="critical-box success" style={{ marginTop: "var(--space-4)" }}>
           <h4>💡 Key Insight</h4>
           <p style={{ marginBottom: 0 }}>
             Traditional sustainability apps show global CO₂ emissions—abstract, overwhelming.
