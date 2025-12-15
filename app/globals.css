@@ -492,6 +492,27 @@ blockquote cite {
   margin: var(--space-6) 0;
 }
 
+/* When framework-box has inline light background, force dark text */
+.framework-box[style*="background"] {
+  color: #1a1a1a !important;
+}
+
+.framework-box[style*="background"] * {
+  color: inherit !important;
+}
+
+.framework-box[style*="background"] strong {
+  color: #1a1a1a !important;
+}
+
+.framework-box[style*="background"] em {
+  color: #374151 !important;
+}
+
+.framework-box[style*="background"] h4 {
+  color: #1a1a1a !important;
+}
+
 /* Methodology Steps */
 .methodology-steps {
   counter-reset: step;
@@ -531,6 +552,20 @@ blockquote cite {
   border-radius: 8px;
   padding: var(--space-6);
   margin: var(--space-6) 0;
+  /* Force dark text for contrast on light backgrounds */
+  color: #1a1a1a !important;
+}
+
+.critical-box * {
+  color: inherit !important;
+}
+
+.critical-box strong {
+  color: #1a1a1a !important;
+}
+
+.critical-box em {
+  color: #374151 !important;
 }
 
 .critical-box.failure {
@@ -548,6 +583,7 @@ blockquote cite {
   align-items: center;
   gap: var(--space-2);
   margin-bottom: var(--space-3);
+  color: #1a1a1a !important;
 }
 
 /* ====================================
