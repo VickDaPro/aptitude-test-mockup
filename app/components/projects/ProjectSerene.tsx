@@ -97,6 +97,38 @@ function Page1() {
         ]}
       />
 
+      <ImagePlaceholder
+        title="HIGH-FIDELITY MOCKUP: Serene Home Screen"
+        description="A polished iPhone 14 Pro mockup showing the Serene app home screen. This is the primary UI that demonstrates calm technology in practice."
+        size="full"
+        elements={[
+          "DEVICE: iPhone 14 Pro, portrait orientation, slight 5-10° angle with soft shadow",
+          "",
+          "BACKGROUND: Soft, warm gradient flowing from pale peach (#FFE5D9) at top to light lavender (#E8E0F0) at bottom—feels like gentle sunrise",
+          "",
+          "MAIN VISUAL: Large minimalist arc (270° of a circle) in upper-center",
+          "- Arc stroke: 4px thick, semi-transparent white with soft glow",
+          "- Small glowing dot on the arc showing current position",
+          "- Arc represents 7-day pain trend (subtle, not obvious)",
+          "",
+          "SUBTLE TEXT: 'Last logged: 2h ago' in bottom third, thin sans-serif (Inter/SF Pro Light), 40% opacity white",
+          "",
+          "FLOATING ACTION BUTTON: Circular button at bottom center",
+          "- Frosted glass effect (glassmorphism)",
+          "- Simple '+' icon, soft shadow",
+          "- Button blends with background, barely visible until focused",
+          "",
+          "STATUS BAR: Standard iOS elements in muted tones",
+          "",
+          "ANNOTATION CALLOUTS around mockup:",
+          "1. Arrow to gradient: 'Ambient color shifts with 7-day pain trend'",
+          "2. Arrow to arc: 'Glanceable trend indicator—no numbers'",
+          "3. Arrow to button: 'One-tap logging—4 seconds avg'",
+          "",
+          "FEEL: Like digital art that happens to be functional. Maximum whitespace, gentleness, no sharp edges or urgency.",
+        ]}
+      />
+
       <span className="page-number">1 / 5</span>
     </article>
   );
@@ -310,6 +342,39 @@ function Page4() {
           ]}
         />
 
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Pain Logging Screen"
+          description="A polished iPhone 14 Pro mockup showing Serene's simplified pain logging interaction—demonstrating the 4-second average logging time."
+          size="large"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "BACKGROUND: Continuation of calm gradient, slightly dimmed to focus attention",
+            "",
+            "MAIN ELEMENT: Large horizontal slider in center of screen",
+            "- Track: Very subtle thin line (2px) with soft gradient from blue-green (calm) to warm coral (more pain)",
+            "- Thumb: Smooth rounded rectangle with soft shadow and slight glow",
+            "- Current position creates subtle 'halo' on the gradient",
+            "",
+            "VISUAL FEEDBACK ABOVE SLIDER: Abstract organic shape that morphs",
+            "- At low pain: small, calm, circular shape (gentle cloud)",
+            "- At higher pain: shape becomes more complex, wavy edges (not aggressive)",
+            "- Colors shift from cool tones to warmer tones",
+            "",
+            "NO PAIN NUMBER DISPLAY—intentional. Slider communicates without precise numeric thought.",
+            "",
+            "OPTIONAL NOTE: Small 'Add a note...' text below slider, very minimal",
+            "",
+            "BOTTOM BUTTONS:",
+            "- Left: Subtle 'Cancel' in text (no border)",
+            "- Right: Soft pill-shaped 'Log' button with frosted glass effect",
+            "",
+            "AUTO CONTEXT: 'Now, at Home' shown subtly at top (auto-detected)",
+            "",
+            "FEEL: Like sketching in a journal, not filling out a medical form.",
+          ]}
+        />
+
         <h3>Key Design Decisions</h3>
         <div className="two-columns">
           <div>
@@ -367,6 +432,36 @@ function Page4() {
             "3. LOG BUTTON:",
             "- Soft rounded rectangle",
             "- Notes: 'Blends with background', '16px padding', 'Haptic on tap: soft single pulse'",
+          ]}
+        />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Weekly Insights View"
+          description="A polished iPhone 14 Pro mockup showing Serene's calm data visualization—abstract landscape instead of traditional charts."
+          size="large"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "BACKGROUND: Darker evening gradient—deep purple (#2D1B4E) to dark blue (#1A1A2E)",
+            "",
+            "HEADER: 'Your Week' in elegant light font, small back arrow icon",
+            "",
+            "MAIN VISUALIZATION: Abstract landscape (NOT traditional chart)",
+            "- Mountain range silhouette where peaks = pain intensity",
+            "- Rendered as soft flowing curves, not sharp lines",
+            "- Soft gradients: peaks have warm highlights (coral, peach), valleys are cool blues/purples",
+            "- Days of week as very subtle vertical markers at bottom",
+            "- NO Y-axis numbers, only day initials (M T W T F S S)",
+            "",
+            "INSIGHT CARD: Below visualization, soft rounded corners card",
+            "- Frosted glass effect (glassmorphism)",
+            "- Simple insight: 'Your mornings tend to be calmer' or 'Thursday was your most comfortable day'",
+            "- Small icon (sun/moon) illustrating the insight",
+            "- Observation, not analysis—not data-heavy",
+            "",
+            "BOTTOM NAV (optional): 2-3 subtle icons barely visible, not demanding attention",
+            "",
+            "FEEL: Like looking at artistic interpretation of data, not clinical dashboard.",
           ]}
         />
       </section>

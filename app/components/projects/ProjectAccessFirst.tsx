@@ -375,6 +375,115 @@ function Page4() {
             "CENTER: Arrow pointing to all four with 'Same information, different channels'",
           ]}
         />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Visual Navigation Mode"
+          description="A polished iPhone 14 Pro mockup showing AccessFirst's high-contrast accessible visual navigation interface."
+          size="full"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "MAP BACKGROUND: High-contrast simplified map view",
+            "- Dark background (#1A1A2E) for maximum contrast",
+            "- Streets as white/cream lines with clear width hierarchy",
+            "- Buildings as simple block shapes in dark gray",
+            "- Parks/green as muted teal",
+            "- Point of interest icons are large, simple shapes",
+            "",
+            "ROUTE: Thick bright cyan (#00D4FF) line showing accessible route",
+            "- Dotted alternatives in less prominent color",
+            "- Route avoids stairs, shows ramp/elevator paths",
+            "",
+            "TURN INDICATOR (center-top, ~25% screen width):",
+            "- MASSIVE arrow icon pointing LEFT",
+            "- Direction: '⬅️ Turn LEFT'",
+            "- Bright yellow/gold for visibility",
+            "- Distance: 'in 50 meters' in large text below",
+            "",
+            "LANDMARK PHOTO (top right corner):",
+            "- Small inset of real-world landmark",
+            "- Photo of 'Coffee Corner' storefront",
+            "- Caption: 'At Coffee Corner'",
+            "",
+            "BOTTOM CONTROL BAR: Three large clearly labeled buttons",
+            "- 🔊 'Audio' (speaker icon)",
+            "- 📳 'Haptic' (vibration wave icon)",
+            "- ⚙️ 'Settings' (gear icon)",
+            "- 'Visual' mode highlighted",
+            "- Large touch targets (minimum 48px)",
+            "",
+            "ACCESSIBILITY: All text WCAG AAA compliant, no small text, icons with labels.",
+          ]}
+        />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Simplified/Cognitive Mode"
+          description="A polished iPhone 14 Pro mockup showing AccessFirst's cognitive accessibility mode—one instruction at a time with enormous buttons."
+          size="large"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "BACKGROUND: Clean solid color—calming sage green (#E8F5E9)",
+            "",
+            "MAIN CONTENT (90% of screen):",
+            "- Single instruction in HUGE text (32-40pt)",
+            "- 'Turn LEFT at the coffee shop'",
+            "- Directional arrow icon (VERY large, ~20% of screen)",
+            "- Arrow is bright clear blue (#2196F3)",
+            "",
+            "LANDMARK PHOTO:",
+            "- Large photo (~50% screen width)",
+            "- Shows EXACTLY what user should look for",
+            "- Coffee shop storefront from user's perspective",
+            "- Subtle frame around photo",
+            "",
+            "CONFIRMATION BUTTON:",
+            "- ENORMOUS green button at bottom",
+            "- '✓ Got it!' with check mark",
+            "- Full width, 80px+ tall",
+            "- Satisfying tap feel",
+            "",
+            "EMERGENCY/HELP: '📞 Call for help' in top corner",
+            "- Always visible, always accessible",
+            "- Red/orange for visibility",
+            "",
+            "NO: Map, distance numbers, ETA, alternative routes. ONLY the next instruction.",
+            "",
+            "PROGRESS: Very simple dots at top (• • ● • •) showing 'instruction 3 of 5'",
+          ]}
+        />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Haptic Mode with Smartwatch"
+          description="A mockup showing AccessFirst's haptic navigation with smartwatch integration and haptic pattern legend."
+          size="large"
+          elements={[
+            "COMPOSITION: Dual-device view showing both smartwatch AND smartphone",
+            "",
+            "SMARTWATCH (foreground, Apple Watch Series 8 or similar):",
+            "- Shown on stylized wrist",
+            "- Simple directional indicator on watch face",
+            "- Large arrow in center pointing direction",
+            "- Minimal text: '50m' for distance",
+            "- Muted calm background color",
+            "- Pulsing animation indicator (motion lines) suggesting haptic vibration",
+            "- Vibration waves illustrated coming from watch",
+            "",
+            "SMARTPHONE (background, slightly grayed):",
+            "- Shows detailed map view with route",
+            "- Demonstrates phone can be in pocket while watch guides",
+            "",
+            "HAPTIC PATTERN LEGEND (side panel or below):",
+            "Visual representation of patterns:",
+            "- '• •' (two short pulses) = 'continue straight'",
+            "- '• • —' (short-short-long) = 'turn coming soon'",
+            "- '— —' (two long pulses) = 'turn now'",
+            "- '• — • —' (alternating) = 'arrived'",
+            "Each pattern shown with wave visualization",
+            "",
+            "KEY MESSAGE: 'Hands-free, eyes-free navigation'",
+          ]}
+        />
       </section>
 
       <span className="page-number">4 / 5</span>

@@ -73,6 +73,42 @@ function Page1() {
             "Citation at bottom: 'Adapted from Clayton et al., 2020'",
           ]}
         />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: The Growing Garden Home Screen"
+          description="A polished iPhone 14 Pro mockup showing EcoAware's signature 'Local Impact Garden' visualization—the core metaphor of the app."
+          size="full"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait, slight angle with soft shadow",
+            "",
+            "BACKGROUND: Soft sky gradient—pale blue (#E0F4FF) at top to soft cream (#FFF9E6) at bottom, subtle clouds",
+            "",
+            "MAIN GARDEN (60% of screen): Isometric/soft 3D view of small garden plot",
+            "- 8-12 plant elements in various growth stages:",
+            "  • Small seedlings (just sprouted, simple shapes)",
+            "  • Medium plants (leaf details, small flowers)",
+            "  • Mature plants/flowers in full bloom",
+            "  • Include variety: small tree, flowering plants, leafy greens",
+            "- Plants are stylized illustrations, not photorealistic",
+            "- Some plants have subtle sparkles/animation indicators",
+            "- Ground: soft earthy tones with grass patches",
+            "- Small fence/border around garden with subtle pathway",
+            "",
+            "LOCATION: Small text at top: 'Your garden reflects impact in [City]' with tiny location pin",
+            "",
+            "TODAY'S ACTION: Gentle floating notification bubble (not intrusive)",
+            "- '3 neighbors chose reusable bags today' with small icon",
+            "- Soft green background, rounded corners, floats gently",
+            "",
+            "BOTTOM ACTION:",
+            "- Soft CTA: 'Log an action' with leaf icon",
+            "- Subtle nav: home (highlighted), explore, profile as faded icons",
+            "",
+            "WEATHER: Sky gradient reflects actual local weather (sunny shown)",
+            "",
+            "KEY: NO points, badges, or streaks visible. Personal and alive, not gamified.",
+          ]}
+        />
       </section>
 
       <span className="page-number">1 / 5</span>
@@ -308,6 +344,73 @@ function Page4() {
             "- Ambient background matching local weather",
             "- Minimal text, rich ambient visualization",
             "- Annotation: 'Final: calm, local, glanceable'",
+          ]}
+        />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Action Logging Screen"
+          description="A polished iPhone 14 Pro mockup showing EcoAware's simple habit tracking with tappable action cards."
+          size="large"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "BACKGROUND: Continuation of garden theme—soft gradient with gentle floral/botanical pattern at low opacity",
+            "",
+            "HEADER: 'Log today's action' in friendly, approachable font",
+            "",
+            "MAIN CONTENT - ACTION CARDS: Grid of 6 cards (2 columns × 3 rows)",
+            "Each card is rounded square with soft shadow:",
+            "1. 🚲 'Biked instead of drove'",
+            "2. 🥬 'Chose local produce'",
+            "3. 🛍️ 'Used reusable bags'",
+            "4. 💡 'Turned off unused lights'",
+            "5. 🚿 'Shorter shower'",
+            "6. ♻️ 'Recycled properly'",
+            "",
+            "Cards look tappable but soft, inviting—not button-like",
+            "One card in 'selected' state (subtle green border, slight glow)",
+            "",
+            "OPTIONAL NOTE: Small 'Add what made this easy...' text input below, very unobtrusive",
+            "",
+            "NEIGHBOR CONTEXT: Small text at bottom: 'Sara nearby logged reusable bags an hour ago' — social proof without competition",
+            "",
+            "CONFIRM: Soft green pill button 'Plant this action 🌱' at bottom",
+            "",
+            "FEEL: Like choosing a sticker for a wellness journal, not checking off a to-do.",
+          ]}
+        />
+
+        <ImagePlaceholder
+          title="HIGH-FIDELITY MOCKUP: Local Impact Community View"
+          description="A polished iPhone 14 Pro mockup showing the localized community impact visualization with map and neighborhood stats."
+          size="large"
+          elements={[
+            "DEVICE: iPhone 14 Pro, portrait",
+            "",
+            "BACKGROUND: Stylized aerial/map view of neighborhood (illustrative, not Google Maps)",
+            "- Soft muted colors for buildings (creams, light grays)",
+            "- Parks/green areas more vibrant",
+            "- River/water feature if present (soft blue)",
+            "",
+            "OVERLAY - IMPACT CLUSTERS: Small garden icons scattered across map",
+            "- Each garden = tiny tree/plant icon where users have claimed gardens",
+            "- Tooltip on tap: 'This area: 12 gardens, 47 actions this week'",
+            "- Gardens clustered in residential areas",
+            "",
+            "YOUR LOCATION: Slightly larger pulsing garden icon with 'You' label",
+            "",
+            "COMMUNITY STATS (bottom third): Frosted glass card overlay",
+            "- 'Your neighborhood this month:'",
+            "- 3 simple icons with numbers:",
+            "  🌳 '127 trees worth of CO₂ saved'",
+            "  🚴 '89 trips by bike'",
+            "  🛍️ '234 plastic bags avoided'",
+            "- Qualitative: 'Your community is growing something beautiful'",
+            "- NO precise CO₂ grams—directional messaging only",
+            "",
+            "POLICY LINK: Small subtle 'See what's happening locally →' for community action",
+            "",
+            "FEEL: Part of something collective and positive, not competitive.",
           ]}
         />
 
